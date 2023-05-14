@@ -1,0 +1,56 @@
+# Arquivos gerados automaticamente
+bin/
+obj/
+Debug/
+Release/
+
+# Arquivos de dependências
+packages/
+*.dll
+*.exe
+*.pdb
+*.user
+*.apsx
+*.appx
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*._log
+*.log
+*.tmp
+*.tmp_proj
+*.jfm
+*.gpState
+
+# Arquivos de configuração
+*.config
+*.config.user
+*.config.transform
+Web.config
+Web.Debug.config
+Web.Release.config
+
+# Arquivos de publicação
+[Dd]ebug*/
+[Rr]elease*/
+obj/
+bin/
+*.xml
+*.dll.config
+
+# Outros arquivos
+[Tt]humbs.db
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+node_modules/
+.idea/
+.vs/
+*.sln.ide
