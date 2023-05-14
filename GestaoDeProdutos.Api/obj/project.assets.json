@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "FluentValidation/11.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.5": {
         "type": "package",
         "dependencies": {
@@ -114,10 +127,70 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "GestaoProdutos.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "GestaoProdutos.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestaoProdutos.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoProdutos.Application.dll": {}
+        }
+      },
+      "GestaoProdutos.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "GestaoProdutos.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestaoProdutos.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoProdutos.Domain.dll": {}
+        }
+      },
+      "GestaoProdutos.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/GestaoProdutos.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestaoProdutos.Domain.Core.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/11.5.2": {
+      "sha512": "kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "type": "package",
+      "path": "fluentvalidation/11.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.5.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/7.0.5": {
       "sha512": "yxFvk9BsgL/eDJVsPp0zbUpL73u9uXLYTnWoMBvnJdm8+970YuhM2XWcDOyetjkp8l8z00MHgfYHCRXOnLx/+Q==",
       "type": "package",
@@ -538,10 +611,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "GestaoProdutos.Application/1.0.0": {
+      "type": "project",
+      "path": "../GestaoProdutos.Application/GestaoProdutos.Application.csproj",
+      "msbuildProject": "../GestaoProdutos.Application/GestaoProdutos.Application.csproj"
+    },
+    "GestaoProdutos.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GestaoProdutos.Domain/GestaoProdutos.Domain.csproj",
+      "msbuildProject": "../GestaoProdutos.Domain/GestaoProdutos.Domain.csproj"
+    },
+    "GestaoProdutos.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../GestaoProdutos.Domain.Core/GestaoProdutos.Domain.Core.csproj",
+      "msbuildProject": "../GestaoProdutos.Domain.Core/GestaoProdutos.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "GestaoProdutos.Application >= 1.0.0",
+      "GestaoProdutos.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -573,7 +663,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\luanr\\Documents\\Projetos\\GestaoDeProdutos\\GestaoProdutos.Application\\GestaoProdutos.Application.csproj": {
+              "projectPath": "C:\\Users\\luanr\\Documents\\Projetos\\GestaoDeProdutos\\GestaoProdutos.Application\\GestaoProdutos.Application.csproj"
+            },
+            "C:\\Users\\luanr\\Documents\\Projetos\\GestaoDeProdutos\\GestaoProdutos.Domain\\GestaoProdutos.Domain.csproj": {
+              "projectPath": "C:\\Users\\luanr\\Documents\\Projetos\\GestaoDeProdutos\\GestaoProdutos.Domain\\GestaoProdutos.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dMUhoRJz9BW8FG6BQM/BPd3aGSi3rraq/x05477m5Mp58Tqae9WjtQiMjlu32Hu3U/WOKmRDdtdsD5eFJtxMfA==",
+  "dgSpecHash": "4vuxeu3Izb1zW49Pd/UXgz7oAyQ8RLPSiro7StDpIU6wVQ05tnNdR4WqCZesi+pbNhrGvagFhH30Jw/I932CiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\luanr\\Documents\\Projetos\\GestaoDeProdutos\\GestaoDeProdutos.Api\\GestaoDeProdutos.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\luanr\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\luanr\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\luanr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\luanr\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",

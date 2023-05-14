@@ -7,5 +7,11 @@ namespace GestaoDeProdutos.Api.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
+        [HttpPost]
+        [Route("create-product")]
+        public IActionResult CreateProduct(int? id)
+        {
+            return Ok(new { id });
+        }
     }
 }
