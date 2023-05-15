@@ -1,10 +1,10 @@
-Gestão de Produtos
+#Gestão de Produtos
 Aplicação .NET API REST para gerenciamento de produtos, utilizando a arquitetura DDD (Domain-Driven Design) e Docker para gerenciamento de serviços e banco de dados. A aplicação está dividida em três pastas principais: API, DDD e TDD, sendo que esta última contém os testes automatizados.
 
-Pré-requisitos
+##Pré-requisitos
 Para executar esta aplicação, é necessário ter o Docker e o Docker Compose instalados no seu sistema operacional.
 
-Como executar os testes
+##Como executar os testes
 Para executar os testes automatizados, siga os seguintes passos:
 
 Abra o terminal na pasta raiz da aplicação
@@ -27,7 +27,7 @@ Copy code
 docker-compose up
 O comando acima inicia o serviço da API e o banco de dados SQL em containers separados do Docker, permitindo que a aplicação seja executada de forma isolada e portátil.
 
-Endpoints disponíveis
+##Endpoints disponíveis
 A API oferece os seguintes endpoints:
 
 GET /api/produtos: Retorna todos os produtos cadastrados
@@ -46,6 +46,3 @@ SQL Server
 xUnit
 Contribuindo
 Contribuições são sempre bem-vindas! Se você quiser contribuir com este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-Licença
-Este projeto é licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
