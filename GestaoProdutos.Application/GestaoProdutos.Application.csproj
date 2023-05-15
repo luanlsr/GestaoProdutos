@@ -11,4 +11,12 @@
     <ProjectReference Include="..\GestaoProdutos.Infra.Data\GestaoProdutos.Infra.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Maps\" />
+    <Folder Include="Models\Requests\" />
+    <Folder Include="Models\Responses\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

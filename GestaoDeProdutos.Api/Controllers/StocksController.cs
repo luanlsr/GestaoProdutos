@@ -5,11 +5,11 @@ namespace GestaoDeProdutos.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriasController : ControllerBase
+    public class StocksController : ControllerBase
     {
         [HttpPost]
-        [Route("create-product")]
-        public IActionResult CreateProduct(int? id)
+        [Route("create-stock")]
+        public IActionResult CreateStock(int? id)
         {
             return Ok(new { id });
         }
