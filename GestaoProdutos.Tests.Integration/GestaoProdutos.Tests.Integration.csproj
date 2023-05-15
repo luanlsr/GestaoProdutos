@@ -22,4 +22,13 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestaoDeProdutos.Api\GestaoDeProdutos.Api.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Application\GestaoProdutos.Application.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Domain.Core\GestaoProdutos.Domain.Core.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Domain\GestaoProdutos.Domain.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Infra.Data\GestaoProdutos.Infra.Data.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Tests.Unit\GestaoProdutos.Tests.Unit.csproj" />
+  </ItemGroup>
+
 </Project>

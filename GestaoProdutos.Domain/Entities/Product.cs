@@ -15,5 +15,7 @@ namespace GestaoProdutos.Domain.Core.Entities
         public int? Quantity { get; set;}
         public Guid? StockId { get; set; }
         public Guid? CategoryId { get; set; }
+        public Category Category { get; set; }
+        public Stock Stock { get; set; }
     }
 }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GestaoProdutos.Domain\GestaoProdutos.Domain.csproj" />
+    <ProjectReference Include="..\GestaoProdutos.Infra.Data\GestaoProdutos.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

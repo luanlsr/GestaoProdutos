@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "root"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+  app:
+    build: 
+      context: .
+      dockerfile: ./GestaoProdutos.Api/Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=db;Database=product_management_db;User Id=sa;Password=root;"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoProdutos.Tests.Unit",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoProdutos.Tests.Integration", "GestaoProdutos.Tests.Integration\GestaoProdutos.Tests.Integration.csproj", "{CD294036-EF1F-4771-9C39-7350AD1FAB73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoProdutos.Infra.Data", "GestaoProdutos.Infra.Data\GestaoProdutos.Infra.Data.csproj", "{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{CD294036-EF1F-4771-9C39-7350AD1FAB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD294036-EF1F-4771-9C39-7350AD1FAB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD294036-EF1F-4771-9C39-7350AD1FAB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{2FAB3313-25DA-441C-AFC7-A0ABCA13A41D} = {531E4ADF-CD4B-4FD7-B1DB-A262D8DEB508}
 		{CDEB35AD-74C8-46A3-ADA0-DD026BCDF459} = {4FC95540-FAAE-46CF-9528-76462D7FE68F}
 		{CD294036-EF1F-4771-9C39-7350AD1FAB73} = {6B9AEE2D-9B4B-4C93-AD74-755EEF6F5790}
+		{19B3B0B0-15E3-4505-8A21-57FA3A2C15B2} = {BDA8CF56-1C9E-4032-AC76-E8CA9CEB1279}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E6BD66F-3EFE-4F5D-B657-2C7ACDB304B6}

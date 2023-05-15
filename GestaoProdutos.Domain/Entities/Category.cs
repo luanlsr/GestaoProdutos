@@ -10,5 +10,6 @@ namespace GestaoProdutos.Domain.Core.Entities
     {
         public Guid? Id { get; set; }
         public string? Description { get; set; }
+        public List<Product> Products { get; set; }
     }
 }
